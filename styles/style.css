@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300;400;600;700&display=swap');
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Smooch Sans", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgba(236, 208, 171, 0.3);
+    position: sticky;
+    top: 0;
+}
+
+.header img {
+    height: 120px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.4rem;
+}
+
+/* ===== TITULOS ===== */
+h1 {
+    color: rgb(229, 124, 11);
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+p {
+    color: rgb(206, 74, 74);
+}
+
+/* ===== SECTION RAZONES ===== */
+.paseos {
+    padding: 60px 20px 30px;
+}
+
+.razones-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+.card-paseos,
+.card-guias,
+.card-grupos {
+    border: 2px solid rgb(255, 149, 0);
+    padding: 20px;
+}
+
+.razones-cards img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/*SECTION TEMPORADAS */
+.section-temporadas {
+    padding: 60px 40px;
+}
+
+.div-temporadas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.temporada-verano img,
+.temporada-invierno img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* SECTION PAQUETES  */
+.paquetes {
+    padding: 60px 40px;
+}
+
+.card-paquete {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card-paquete1,
+.card-paquete2 {
+    padding: 20px;
+}
+
+.card-paquete img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* FOOTER  */
+.footer {
+    background-color: rgba(236, 208, 171, 0.3);
+    padding: 40px;
+    margin-top: 60px;
+}
+
+.footer img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-direction: row;
+    }
+
+    .razones-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .div-temporadas {
+        grid-template-columns: 1fr;
+    }
+
+    .card-paquete {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* =========================
+PRUEBAS (solo pruebas.html)
+========================= */
+
+
+/*ACA ESTOY PROBANDO BOX MODEL, EN PESTAÑA PRUEBAS.HTML*/
+
+
+.li-border {
+    border: inset;
+    color: blueviolet 3px;
+    padding: 20px;
+    width: 50%;
+}
+
+
+
+.container {
+    display: grid;
+
+    grid-template-columns: 20fr 20fr 20fr;
+    grid-template-rows: 100px 200px 100px;
+
+    grid-template-areas:
+        "header header header"
+        "sidebar main ."
+        "footer footer footer";
+
+    gap: 10px 20px;
+
+    border: solid 5px;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+/* ========================= HEADER Y MENU DE PAGINA PRUEBAS
+EL GAP HACE QUE TENGA ESPACIO ENTRE TEXTOS
+========================= */
+.ul-prueba {
+    background-color: rgb(197, 206, 222);
+    display: flex;
+    margin: 20px;
+    font-size: 1rem;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+}
+
+
+.ul {
+
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+    font-size: 1.5rem;
+
+}
+
+.ul a {
+    text-decoration: none;
+}
