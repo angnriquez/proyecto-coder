@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Smooch Sans", sans-serif;
 }
 
@@ -14,7 +13,7 @@ body {
     text-align: center;
 }
 
-/* ===== HEADER ===== */
+/*GENERAL PARA TODAS LAS PAGINAS*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -23,16 +22,27 @@ body {
     background-color: rgba(236, 208, 171, 0.3);
     position: sticky;
     top: 0;
+    background-image: url(../img/ush-web6.webp);
+    background-position: bottom;
+    height: 15vh;
+    opacity: 95%;
 }
 
 .header img {
     height: 120px;
 }
 
+
+
+.header a {
+    color: white !important;
+}
+
 .menu {
     list-style: none;
     display: flex;
     gap: 25px;
+
 }
 
 .menu a {
@@ -41,9 +51,10 @@ body {
     font-size: 1.4rem;
 }
 
-/* ===== TITULOS ===== */
+/* TITULOS*/
 h1 {
     color: rgb(229, 124, 11);
+
 }
 
 h2 {
@@ -52,9 +63,49 @@ h2 {
 
 p {
     color: rgb(206, 74, 74);
+    font-size: 1.5rem
 }
 
-/* ===== SECTION RAZONES ===== */
+
+/* FOOTER  */
+.footer {
+    background-color: rgba(236, 208, 171, 0.3);
+    padding: 40px;
+    margin-top: 60px;
+}
+
+.footer img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/*LOGO WHATSAPP FIJO*/
+
+.wsp img {
+    width: 105px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.wsp {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/*TERMINA GENERAL PARA TODAS LAS PAGINAS*/
+
+
+/*INDEX*/
+/* SECTION RAZONES */
 .paseos {
     padding: 60px 20px 30px;
 }
@@ -90,56 +141,185 @@ p {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     margin-top: 40px;
+    border: #000;
 }
 
 .temporada-verano img,
 .temporada-invierno img {
     width: 100%;
-    height: 260px;
+    height: 50vh;
     object-fit: cover;
     margin-bottom: 15px;
 }
 
 /* SECTION PAQUETES  */
 .paquetes {
-    padding: 60px 40px;
+    padding: 1.5%;
+}
+
+.texto-paquete {
+    height: 20%;
 }
 
 .card-paquete {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 .card-paquete1,
 .card-paquete2 {
     padding: 20px;
+    border: 2px solid rgb(255, 149, 0);
+
 }
 
 .card-paquete img {
-    width: 100%;
-    height: 260px;
+    width: 40vw;
+    height: 50vh;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-/* FOOTER  */
-.footer {
-    background-color: rgba(236, 208, 171, 0.3);
-    padding: 40px;
-    margin-top: 60px;
+.card-paquete1 p,
+.card-paquete2 p {
+
+    width: 100%;
+    text-align: center;
 }
 
-.footer img {
-    height: 50px;
-    margin-bottom: 15px;
+
+
+
+/*TERMINA PAQUETES*/
+
+
+
+
+
+
+/* PAGINA INVIERNO*/
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: ski motos trineos;
+    gap: 20px;
 }
 
-.footer a {
-    text-decoration: none;
-    color: black;
+
+.cards img {
+
+    width: 80%;
+    height: 75%;
+    margin: 1%;
+    padding: 2.5%;
+    background-image: url(../img/esqui-cerro-castor.jpg);
+    background-color: bisque;
 }
+
+
+.cerro {
+    width: 100%;
+}
+
+
+.cerro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.cerro img {
+    width: 100%;
+    height: 750px;
+    max-width: 600px;
+    object-fit: cover;
+    margin-top: 2.5%;
+}
+
+
+.textocerro {
+    max-width: 100% background-color: red;
+}
+
+.descubri {
+    margin: 10%;
+}
+
+.actividades-inv {
+
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin-top: 7%;
+
+}
+
+
+
+
+
+/*TERMINA PAGINA INVIERNO*/
+
+
+
+
+
+/*PAGINA PAQUETES*/
+
+.todo {
+    font-size: 2rem;
+}
+
+.descubri {
+    font-size: 2.9rem;
+}
+
+
+/*TERMINA PAGINA PAQUETES*/
+
+/*EMPIEZA PAGINA DESTINOS*/
+
+.galeria {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.galeria img {
+
+    height: auto gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.calafate {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calafate img {
+    height: auto gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+
+
+
 
 /*RESPONSIVE*/
 @media (max-width: 768px) {
@@ -161,10 +341,46 @@ p {
         grid-template-columns: 1fr;
     }
 
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .paquetes {
+        grid-template-columns: 1fr;
+    }
+
     .card-paquete {
         grid-template-columns: 1fr;
     }
+
+    .card-paquete1 img,
+    .card-paquete2 img {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .cerro {
+        padding: 20px;
+    }
+
+    .textocerro {
+        padding: 0 10px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
 }
+
 
 
 
